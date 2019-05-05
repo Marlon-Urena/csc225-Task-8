@@ -12,11 +12,3 @@ $(document).ready(function(){
         });
     });
 });
-
-
-//GET request to url
-//loop over response
-//for each item in loop output a div with an <img> with the URL as its source and the title as its alt tag
-//Below <img> , a <p> tag with response title
-//title
-//url
