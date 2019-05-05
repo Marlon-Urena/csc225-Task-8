@@ -3,7 +3,6 @@ $(document).ready(function(){
         var apiBase = "https://jsonplaceholder.typicode.com/photos";
     axios.get(apiBase)
         .then(function(response){
-            console.log(response);
             var photoHTML = response.data.map(function(photo){
                 return $('<div>').addClass('task').data('id', photo.id).html("<img src=\"" + photo.url + "\" alt=\"" + photo.title + "\">"
                 + "<p>" + photo.title + "</p>");
